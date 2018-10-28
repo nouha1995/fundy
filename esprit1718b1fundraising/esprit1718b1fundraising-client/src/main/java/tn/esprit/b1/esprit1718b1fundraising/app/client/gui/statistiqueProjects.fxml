@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.gui.StatistiqueProjectsController">
+   <children>
+      <StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1010.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../../../../../Downloads/bookingFx/bookingFX-master/build/classes/bookingfx/style.css">
+               <children>
+                  <AnchorPane layoutX="39.0" layoutY="7.0" prefHeight="596.0" prefWidth="217.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="22.0" layoutY="239.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Account Information" />
+                        <VBox layoutX="21.0" layoutY="249.0" prefHeight="98.0" prefWidth="189.0" spacing="10.0">
+                           <children>
+                              <VBox />
+                              <VBox />
+                              <VBox />
+                              <Label fx:id="ammount" prefHeight="35.0" prefWidth="193.0" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="7.0" layoutY="351.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" />
+                        <VBox layoutY="317.0" />
+                        <JFXListView fx:id="listTransaction" layoutX="2.0" layoutY="391.0" prefHeight="191.0" prefWidth="217.0" />
+                        <Label layoutX="34.0" layoutY="253.0" prefHeight="29.0" prefWidth="162.0" text="Actual Ammount">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="351.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Your Transactions" />
+                        <ImageView fitHeight="201.0" fitWidth="189.0" layoutX="16.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="319.0" layoutY="7.0" prefHeight="52.0" prefWidth="269.0" text="Project of the Day">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="288.0" layoutY="59.0" prefHeight="252.0" prefWidth="445.0" style="-fx-background-radius: 3; -fx-border-radius: 3; -fx-border-color: #c3c3c3; -fx-background-color: white;">
+                     <children>
+                        <Label fx:id="localisation" layoutX="34.0" layoutY="52.0" prefHeight="30.0" prefWidth="246.0" style="-fx-text-fill: #73879C; -fx-font-weight: bold; -fx-font-size: 15;" />
+                        <Label fx:id="Descreption" layoutX="34.0" layoutY="82.0" prefHeight="30.0" prefWidth="246.0" style="-fx-text-fill: #73879C; -fx-font-weight: bold; -fx-font-size: 15;" />
+                        <Label fx:id="Cathegory" layoutX="34.0" layoutY="155.0" prefHeight="30.0" prefWidth="246.0" style="-fx-text-fill: #73879C; -fx-font-weight: bold; -fx-font-size: 15;" />
+                        <Label fx:id="title" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="246.0" style="-fx-text-fill: #73879C;">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="financement" layoutX="34.0" layoutY="125.0" prefHeight="30.0" prefWidth="246.0" style="-fx-text-fill: #73879C; -fx-font-weight: bold; -fx-font-size: 15;" />
+                        <Pane layoutY="200.0" prefHeight="50.0" prefWidth="494.0" style="-fx-border-radius: 0 0 3 3; -fx-background-color: #E5E8EB; -fx-border-color: #C3C3C3; -fx-border-width: 1 0 0 0;">
+                           <children>
+                              <ProgressBar fx:id="progress" layoutX="26.0" layoutY="16.0" prefWidth="200.0" progress="0.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <effect>
+                                    <SepiaTone />
+                                 </effect>
+                              </ProgressBar>
+                           </children></Pane>
+                        <ImageView fx:id="image" fitHeight="152.0" fitWidth="162.0" layoutX="330.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <Bloom />
+                           </effect></ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="293.0" layoutY="329.0" prefHeight="35.0" prefWidth="421.0" text="Projects that you have invested In">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <BorderPane fx:id="calendar" layoutX="740.0" layoutY="376.0" prefHeight="214.0" prefWidth="262.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;" />
+                  <JFXListView fx:id="listprojetInvestor" layoutX="279.0" layoutY="376.0" prefHeight="214.0" prefWidth="448.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" />
+                  <ImageView fitHeight="130.0" fitWidth="142.0" layoutX="860.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Capture.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

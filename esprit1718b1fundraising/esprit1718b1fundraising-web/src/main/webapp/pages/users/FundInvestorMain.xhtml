@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://java.sun.com/jsf/passthrough" data-wf-page="5899963e15fe7ce241e6ef40" data-wf-site="5899963e15fe7ce241e6ef41"
+>
+	
+<h:head>
+    
+	<title><ui:insert name="pageTitle" /></title>
+	<h:outputStylesheet library="css" name="application.css" />
+	<link rel="shortcut icon" type="image/x-icon"
+		href="#{request.contextPath}/resources/img/favicon.ico" />
+		 <meta charset="utf-8"/>
+		 
+    <title>Studies Webflow Template<ui:insert name="pageTitle" /></title>
+    <meta content="Studies is a very flexible template, you can easy use it for a university, as a tutorial page or as a job portal. The style is really clean and minimalistic. The theme is 100% customizable." name="description"/>
+    <meta content="Studies Webflow Template" property="og:title"/>
+    <meta content="Studies is a very flexible template, you can easy use it for a university, as a tutorial page or as a job portal. The style is really clean and minimalistic. The theme is 100% customizable." property="og:description"/>
+    <meta content="summary" name="twitter:card"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Webflow" name="generator"/>
+    <h:outputStylesheet library="css" name="studies-theme.webflow.9ee417b40.css" />
+    <script src="../ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <h:outputScript library="js" name="webfont.js" />
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Montserrat:400,700", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Roboto:100,300,regular,500,700,900", "Source Sans Pro:200,300,regular,600,700"]
+            }
+        });
+    </script>
+    <script src="../daks2k3a4ib2z.cloudfront.net/0globals/modernizr-2.7.1.js" type="text/javascript"></script>
+    <h:outputScript library="js" name="modernizr-2.7.1.js" />
+    <link rel="apple-touch-icon" href="#{request.contextPath}/resources/img/5899963e15fe7ce241e6ef41/58ad817f158f34e1289687bf_Webclip.png" />
+		<link rel="shortcut icon" type="image/x-icon"
+		href="#{request.contextPath}/resources/img/5899963e15fe7ce241e6ef41/58ad81538c386f51408819bb_Favicon.png" />
+     <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-74792316-3'], ['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+		
+</h:head>
+<h:body>
+	<div class="body">
+
+		 <div class="popup-container">
+        <div class="popup">
+            <div class="popup-close-area" data-ix="popup-close-overlay"></div>
+            <div class="forms-container register-popup">
+                <a class="popup-close-icon w-inline-block w-preserve-3d" data-ix="popup-close-overlay" href="#"></a>
+                <img src="http://uploads.webflow.com/5899963e15fe7ce241e6ef41/58a0882203ea551763f1dd94_register-icon.svg" width="65"/>
+                <h3 class="register-headline">Register today for our University.</h3>
+                <div class="w-form">
+                    <form data-name="Email Form 2" id="email-form-2" name="email-form-2">
+                        <input class="input w-input" data-name="Name 2" id="name-2" maxlength="256" name="name-2" placeholder="Enter your name" type="text"/>
+                        <input class="input w-input" data-name="Email 2" id="email-2" maxlength="256" name="email-2" placeholder="Enter your email address" required="required" type="email"/>
+                        <input class="button register-button w-button" data-wait="Please wait..." type="submit" value="Submit"/>
+                    </form>
+                    <div class="register-success w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="register-error w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu-wrapper w-nav" data-animation="over-right" data-collapse="medium" data-doc-height="1" data-duration="400" data-no-scroll="1">
+        <a class="brand w-nav-brand" href="index.html">
+            <div class="logo">Studies</div>
+        </a>
+        
+        <div class="register-now">
+            <a class="button register-menu transparent w-button" data-ix="register-now" href="#">Register now</a>
+        </div>
+        <nav class="nav-menu w-nav-menu" role="navigation">
+            <a class="nav-link w-nav-link" href="index.html">Home</a>
+            <div class="dropdown w-dropdown" data-delay="0">
+                <div class="nav-link w-dropdown-toggle">
+                    <div>Elements</div>
+                    <div class="w-icon-dropdown-toggle"></div>
+                </div>
+                <nav class="submenu w-dropdown-list">
+                    <a class="submenu-item w-dropdown-link" href="elements/documentation.html">Documentation</a>
+                    <a class="submenu-item w-dropdown-link" href="elements/licenses.html">Licenses</a>
+                    <a class="submenu-item w-dropdown-link" href="elements/styleguide.html">Styleguide</a>
+                    <a class="submenu-item w-dropdown-link" href="elements/404.html">404 Page</a>
+                    <a class="submenu-item w-dropdown-link" href="elements/401.html">Password</a>
+                </nav>
+            </div>
+            <div class="dropdown w-dropdown" data-delay="0">
+                <div class="nav-link w-dropdown-toggle">
+                    <div>About</div>
+                    <div class="w-icon-dropdown-toggle"></div>
+                </div>
+                <nav class="submenu w-dropdown-list">
+                    <a class="submenu-item w-dropdown-link" href="about-2/about.html">About Us</a>
+                    <a class="submenu-item w-dropdown-link" href="about-2/speakers.html">Our Teachers</a>
+                </nav>
+            </div>
+            <div class="dropdown w-dropdown" data-delay="0">
+                <div class="nav-link w-dropdown-toggle">
+                    <div>Courses</div>
+                    <div class="w-icon-dropdown-toggle"></div>
+                </div>
+                <nav class="submenu w-dropdown-list">
+                    <a class="submenu-item w-dropdown-link" href="course/course-overview.html">Courses Grid</a>
+                    <a class="submenu-item w-dropdown-link" href="course/courses-list-overview.html">Courses List</a>
+                    <a class="submenu-item w-dropdown-link" href="course/course-categories.html">Categories</a>
+                </nav> </div>
+                <a class="nav-link w-nav-link" href="events-overview.html">Events</a>
+                <a class="nav-link w-nav-link" href="news/news-overview.html">News</a>
+                <a class="nav-link w-nav-link" href="#{request.contextPath}/charity/CreateForum.jsf">Forums</a>
+        </nav>
+        <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+        </div>
+        <div class="menu-background"></div>
+        </div>
+        <div class="page-container" data-ix="form-wizard-next">
+            <section class="hero" data-ix="menu-background" id="Home">
+                <div class="notifications-container" data-ix="notification">
+                    <div class="w-dyn-list">
+                        <div class="w-dyn-items">
+                            <div class="w-dyn-item">
+                                <a class="notification w-inline-block" href="events/lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr.html">
+                                    <div class="notification-categorie" style="background-image: url('../daks2k3a4ib2z.cloudfront.net/5899963e15fe7ce241e6ef68/589f67c3dc163d57541db9ea_Studies_55.jpg');">
+                                        <div class="label-colour"></div>
+                                    </div>
+                                    <div class="notification-text">
+                                        <h4 class="notification-headline">October 6, 2030</h4>
+                                        <h6 class="notification-subline text-muted">England Rugby National Survey</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slideshow w-slider" data-animation="cross" data-autoplay="1" data-delay="6000" data-disable-swipe="1" data-duration="1000" data-infinite="1" data-ix="hero-fade-in-onload">
+                    <div class="hero-loadbar" data-ix="hero-loadbar"></div>
+                    <div class="hero-slideshow-overlay"></div>
+                    <div class="hero-slideshow-mask w-slider-mask">
+                        <div class="slide-1 w-slide"></div>
+                        <div class="slide-2 w-slide"></div>
+                    </div>
+                </div>
+                <a class="w-inline-block" href="#anchor-content">
+                    <div class="btn scroll-down w-icon-dropdown-toggle"></div>
+                </a>
+                <div class="hero-wrapper">
+                    <div class="cover" data-ix="hero-fade-in-onload">
+                        <h1 class="text-center text-white">Learn boldly. Live to inspire. Get an education, not just a degree.</h1>
+                        <p class="p-cover">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                        <div class="hero-buttons">
+                            <a class="button w-button" data-ix="register-now" href="#">Register now</a>
+                            <a class="button noborder transparent w-button" href="course/course-overview.html">Explore our Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="bg-grey section">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h3 class="text-center">Our University</h3>
+                            <p class="p-large text-center text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                    <div class="facts w-row" data-ix="fadein-bottom-scroll">
+                        <div class="w-col w-col-2 w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-2">
+                            <h2 class="facts-headline">100+</h2>
+                            <div class="text-muted">Active Courses</div>
+                        </div>
+                        <div class="w-col w-col-2">
+                            <h2 class="facts-headline">5,000</h2>
+                            <div class="text-muted">Students</div>
+                        </div>
+                        <div class="w-col w-col-2">
+                            <h2 class="facts-headline">24</h2>
+                            <div class="text-muted">Language Trainings</div>
+                        </div>
+                        <div class="w-col w-col-2">
+                            <h2 class="facts-headline">35+</h2>
+                            <div class="text-muted">Teachers</div>
+                        </div>
+                        <div class="w-col w-col-2 w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container-fluid">
+                    <div class="w-row" data-ix="fadein-bottom-scroll">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h3 class="text-center">Our Courses</h3>
+                            <p class="p-large text-center text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div class="teaser-flex-grid w-clearfix w-dyn-items w-row">
+                            <div class="teaser-flex-grid-item-wrrapper w-col w-col-6 w-dyn-item" data-ix="fadein-bottom-scroll">
+                                <a class="_2 teaser-flex-grid-item w-inline-block" style="background-image: url('../daks2k3a4ib2z.cloudfront.net/5899963e15fe7ce241e6ef68/58a06d9b33b78e327d496164_Studies_01.jpg');" href="courses/how-become-effective-teacher-copy-4.html">
+                                    <div class="teaser-flex-grid-item-overlay"></div>
+                                    <div class="teaser-flex-grid-item-infos-footer">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-10 w-col-stack">
+                                                <div class="teaser-flex-grid-title">MBA Business Management</div>
+                                                <p class="text-muted text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo,</p>
+                                            </div>
+                                            <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                                        </div>
+                                    </div>
+                                    <div class="teaser-flex-grid-item-header w-clearfix">
+                                        <div class="_2 categories teaser-flex-grid-item-categorie" style="background-color: #ff9838; border-color: #ff9838;">
+                                            <div>English</div>
+                                        </div>
+                                    </div>
+                                    <div class="teaser-flex-grid-item-shadow"></div>
+                                </a>
+                            </div>
+                            <div class="teaser-flex-grid-item-wrrapper w-col w-col-6 w-dyn-item" data-ix="fadein-bottom-scroll">
+                                <a class="_2 teaser-flex-grid-item w-inline-block" style="background-image: url('../daks2k3a4ib2z.cloudfront.net/5899963e15fe7ce241e6ef68/589f67c3dc163d57541db9ea_Studies_55.jpg');" href="courses/how-become-effective-teacher-copy-3.html">
+                                    <div class="teaser-flex-grid-item-overlay"></div>
+                                    <div class="teaser-flex-grid-item-infos-footer">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-10 w-col-stack">
+                                                <div class="teaser-flex-grid-title">Sport conditioning, rehabilitation &amp; therapy</div>
+                                                <p class="text-muted text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo,</p>
+                                            </div>
+                                            <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                                        </div>
+                                    </div>
+                                    <div class="teaser-flex-grid-item-header w-clearfix">
+                                        <div class="_2 categories teaser-flex-grid-item-categorie" style="background-color: #ff9838; border-color: #ff9838;">
+                                            <div>Sport</div>
+                                        </div>
+                                    </div>
+                                    <div class="teaser-flex-grid-item-shadow"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-row" data-ix="fadein-bottom-scroll">
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-8 w-col-stack">
+                            <div class="section-more">
+                                <a class="button dark transparent w-button" href="course/course-overview.html">View all Courses</a>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white image-section" data-ix="fadein-bottom-scroll">
+                <div class="image-section-image"></div>
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-6 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-1 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-5 w-col-stack">
+                            <div class="teaser-image-text-container">
+                                <h2 class="text-color">Putting a plan in action to assure your satisfaction.</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                                <a class="button dark transparent w-button" href="#">Button Text</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section" data-ix="fadein-sroll-lazyload">
+                <div class="image-section-image moved right">
+                    <div class="image-section-quote">
+                        <h4>�Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.�</h4>
+                        <div class="text-muted">This is some text inside of a div block.</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-5 w-col-stack">
+                            <div class="teaser-image-text-container">
+                                <h2 class="text-color">Your Education, Your Life, Your School, Our Time Is Now.</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-1 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" data-ix="fadein-bottom-scroll">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h3 class="text-center">Upcoming Events</h3>
+                            <p class="p-large text-center text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                    <div class="w-row">
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-8 w-col-stack">
+                            <div class="event-container">
+                                <div class="w-dyn-list">
+                                    <div class="w-dyn-items">
+                                        <div class="w-dyn-item">
+                                            <a class="event w-inline-block" data-ix="fadein-bottom-scroll" href="events/university-basketball.html">
+                                                <div class="w-row">
+                                                    <div class="w-col w-col-8">
+                                                        <h4 class="event-title">University Basketball</h4>
+                                                    </div>
+                                                    <div class="w-clearfix w-col w-col-4">
+                                                        <div class="more-button-icon w-icon-slider-right"></div>
+                                                        <div class="event-text">Feb 12, 2017</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="w-dyn-item">
+                                            <a class="event w-inline-block" data-ix="fadein-bottom-scroll" href="events/lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-copy.html">
+                                                <div class="w-row">
+                                                    <div class="w-col w-col-8">
+                                                        <h4 class="event-title">University Rugby</h4>
+                                                    </div>
+                                                    <div class="w-clearfix w-col w-col-4">
+                                                        <div class="more-button-icon w-icon-slider-right"></div>
+                                                        <div class="event-text">Feb 12, 2017</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="w-dyn-item">
+                                            <a class="event w-inline-block" data-ix="fadein-bottom-scroll" href="events/lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr.html">
+                                                <div class="w-row">
+                                                    <div class="w-col w-col-8">
+                                                        <h4 class="event-title">England Rugby National Survey</h4>
+                                                    </div>
+                                                    <div class="w-clearfix w-col w-col-4">
+                                                        <div class="more-button-icon w-icon-slider-right"></div>
+                                                        <div class="event-text">Oct 6, 2030</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                    <div class="w-row" data-ix="fadein-bottom-scroll">
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-8 w-col-stack">
+                            <div class="section-more">
+                                <a class="button w-button" href="events-overview.html">View all Events</a>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section" data-ix="fadein-bottom-scroll">
+                <div class="image-section-image left"></div>
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-6 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-1 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-5 w-col-stack">
+                            <div class="teaser-image-text-container">
+                                <h2 class="text-color">I don�t just speak the change I make the change.</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                                <a class="button dark transparent w-button" href="#">Button Text</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-grey section">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h3 class="text-center">Our Sponsors</h3>
+                            <p class="p-large text-center text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                    <div class="logo-slideshow w-slider" data-animation="slide" data-autoplay="1" data-delay="7000" data-duration="1000" data-nav-spacing="7">
+                        <div class="logo-slideshow-mask w-slider-mask">
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Webflow</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" height="60" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6ef98_logo-webflow.png" width="176"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Spotify</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6efa1_logo-spotify.png" width="159"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Skype</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6ef93_logo-skype.png" width="159"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Google</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6efa0_logo-google.png" width="159"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Adobe</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6ef6f_logo-adobe.png" width="159"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Webflow</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" height="60" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6ef98_logo-webflow.png" width="176"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Spotify</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6efa1_logo-spotify.png" width="159"/>
+                                </a>
+                            </div>
+                            <div class="logo-slideshow-item w-slide" data-ix="logo-slideshow-tooltip">
+                                <div class="logo-slideshow-tooltip-position">
+                                    <div class="logo-slideshow-tooltip">
+                                        <div class="logo-slideshow-tooltip-arrow"></div>
+                                        <div>Google</div>
+                                    </div>
+                                </div>
+                                <a class="logo-slideshow-link w-inline-block" href="#">
+                                    <img class="logo-slideshow-item-img" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/5899963e15fe7ce241e6efa0_logo-google.png" width="159"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="logo-slideshow-nav w-round w-slider-nav w-slider-nav-invert"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-color large-section section text-center">
+                <div class="container-fluid">
+                    <div class="w-row" data-ix="fadein-bottom-scroll">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h2 class="text-white">Connect life and learning.</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            <a class="button w-button" href="#">Button Text</a>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-grey section section-register">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <div class="forms-container" data-ix="fadein-bottom-scroll">
+                                <img src="http://uploads.webflow.com/5899963e15fe7ce241e6ef41/58a0882203ea551763f1dd94_register-icon.svg" width="65"/>
+                                <h3 class="register-headline">Register today for our University.</h3>
+                                <div class="w-form">
+                                    <form data-name="Email Form 2" id="wf-form-Email-Form" name="wf-form-Email-Form-2">
+                                        <input class="input w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text"/>
+                                        <input class="input w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email"/>
+                                        <input class="button register-button w-button" data-wait="Please wait..." type="submit" value="Submit"/>
+                                    </form>
+                                    <div class="register-success w-form-done">
+                                        <div class="register-success">Thank you! Your submission has been received!</div>
+                                    </div>
+                                    <div class="register-error w-form-fail">
+                                        <div>Oops! Something went wrong while submitting the form</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h3 class="text-center">Our News</h3>
+                            <p class="p-large text-center text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div class="teaser-flex-grid w-clearfix w-dyn-items w-row">
+                            <div class="teaser-flex-grid-item-wrrapper w-col w-col-6 w-dyn-item">
+                                <a class="_2 teaser-flex-grid-item w-inline-block" data-ix="fadein-bottom-scroll" style="background-image: url('../daks2k3a4ib2z.cloudfront.net/5899963e15fe7ce241e6ef68/58a0718831ee75255489c566_Studies_47.jpg');" href="post/new-opening-in-wileyville.html">
+                                    <div class="teaser-flex-grid-item-overlay"></div>
+                                    <div class="news teaser-flex-grid-item-infos-footer">
+                                        <div class="news-date">Feb 12, 2017</div>
+                                        <div class="teaser-flex-grid-title">We celebrate our 50th birthday!</div>
+                                        <div class="news-autor-container w-clearfix">
+                                            <div class="news-autor">Written by</div>
+                                            <div class="news-autor">Anna P.</div>
+                                        </div>
+                                    </div>
+                                    <div class="teaser-flex-grid-item-shadow"></div>
+                                </a>
+                            </div>
+                            <div class="teaser-flex-grid-item-wrrapper w-col w-col-6 w-dyn-item">
+                                <a class="_2 teaser-flex-grid-item w-inline-block" data-ix="fadein-bottom-scroll" style="background-image: url('../daks2k3a4ib2z.cloudfront.net/5899963e15fe7ce241e6ef68/589f8a9631ee752554899c04_Studies_08.jpg');" href="post/the-bridge.html">
+                                    <div class="teaser-flex-grid-item-overlay"></div>
+                                    <div class="news teaser-flex-grid-item-infos-footer">
+                                        <div class="news-date">Feb 12, 2017</div>
+                                        <div class="teaser-flex-grid-title">Library opening hours</div>
+                                        <div class="news-autor-container w-clearfix">
+                                            <div class="news-autor">Written by</div>
+                                            <div class="news-autor">Anna P.</div>
+                                        </div>
+                                    </div>
+                                    <div class="teaser-flex-grid-item-shadow"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-row">
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-8 w-col-stack">
+                            <div class="section-more">
+                                <a class="button dark transparent w-button" href="news/news-overview.html">View all News</a>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-grey section">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-6 w-col-stack">
+                            <h3 class="text-center">Upcoming Events</h3>
+                            <p class="p-large text-center text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    </div>
+                </div>
+                <div class="teacher-widget w-row">
+                    <div class="w-col w-col-1 w-col-small-small-stack w-col-stack">
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf86f703a9087cc2f1c6_Studies_07.jpg"/>
+                    </div>
+                    <div class="w-col w-col-2 w-col-small-small-stack w-col-stack">
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf9422a3e63563034b9b_Studies_36.jpg"/>
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf9433b78e327d492709_Studies_38.jpg"/>
+                    </div>
+                    <div class="w-col w-col-2 w-col-small-small-stack w-col-stack">
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf9c939b3ae4754a14cc_Studies_55.jpg"/>
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf8d33b78e327d492705_Studies_17.jpg"/>
+                    </div>
+                    <div class="w-col w-col-4 w-col-small-small-stack w-col-stack">
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf89cf4e78737d58f15b_Studies_13.jpg"/>
+                        <div class="w-row">
+                            <div class="w-col w-col-9">
+                                <img class="teacher-widget-padding-right" data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf9533b78e327d49270a_Studies_40.jpg"/>
+                            </div>
+                            <div class="w-col w-col-3">
+                                <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf85dc163d57541da2f1_Studies_05.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-2 w-col-small-small-stack w-col-stack">
+                        <div class="teacher-widget-row w-row">
+                            <div class="w-col w-col-7">
+                                <img class="teacher-widget-padding-right" data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf8ddc163d57541da2f6_Studies_21.jpg"/>
+                            </div>
+                            <div class="w-col w-col-5">
+                                <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf9974b43a277c727971_Studies_51.jpg"/>
+                            </div>
+                        </div>
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf966063a93654e49c16_Studies_44.jpg"/>
+                    </div>
+                    <div class="w-col w-col-1 w-col-small-small-stack w-col-stack">
+                        <img data-ix="gallery" src="../uploads.webflow.com/5899963e15fe7ce241e6ef41/589edf9adc163d57541da2fa_Studies_48.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="section">
+                    <div class="container-fluid">
+                        <div class="w-row">
+                            <div class="w-col w-col-4 w-col-stack">
+                                <div class="logo logo-footer">studies</div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Copyright � studies
+                                        <br/>
+                                        <a href="https://webflow.com/templates/designers/nicolas-kayser" target="_blank">Nicolas Kayser</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                            <div class="w-col w-col-4 w-col-stack">
+                                <h4>Sitemap</h4>
+                                <ul class="sitemap">
+                                    <li>
+                                        <a class="sitemap-link" href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="about-2/about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="about-2/speakers.html">Speakers</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="course/course-overview.html">Courses</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="events-overview.html">Events</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="news/news-overview.html">News</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="elements/documentation.html">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="elements/licenses.html">Licenses</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="elements/404.html">404</a>
+                                    </li>
+                                    <li>
+                                        <a class="sitemap-link" href="elements/styleguide.html">Styleguide</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-col w-col-2 w-col-stack">
+                                <h4>Contact Us</h4>
+                                <div class="footer-text">
+                                    <p>+123 45678910
+                                        <br/>+123 452678910
+                                        <br/>info@nicolaskayser.
+                                        <span>com</span>
+                                    </p>
+                                </div>
+                                <div class="footer-text">
+                                    <ul class="footer-social-media-list w-clearfix">
+                                        <li class="footer-social-media-item">
+                                            <a class="facebook footer-social-media-link w-inline-block" href="#"></a>
+                                        </li>
+                                        <li class="footer-social-media-item">
+                                            <a class="footer-social-media-link twitter w-inline-block" href="#"></a>
+                                        </li>
+                                        <li class="footer-social-media-item">
+                                            <a class="footer-social-media-link google w-inline-block" href="#" ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+           <h:outputScript library="js" name="jquery.min.js" />
+                <h:outputScript library="js" name="webflow.0b4d589bc.js" /> 
+
+	</div>
+</h:body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="579.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.main.ProfilManageController">
+   <children>
+      <ScrollPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="879.0">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="881.0">
+               <children>
+                  <SplitPane dividerPositions="0.19517795637198623" layoutX="-3.0" layoutY="112.0" prefHeight="459.0" prefWidth="881.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="145.0">
+                           <children>
+                              <Accordion prefHeight="459.0" prefWidth="173.0">
+                                <panes>
+                                  <TitledPane animated="false" prefHeight="123.0" prefWidth="171.0" text="Manage Users">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="81.0" prefWidth="169.0">
+                                             <children>
+                                                <JFXButton layoutX="14.0" layoutY="36.0" onAction="#ShowBlockedUsers" text="Manage Blocked Users" />
+                                                <JFXButton layoutX="14.0" layoutY="13.0" onAction="#ShowAllUsers" text="Manage Active Users" />
+                                                <JFXButton layoutX="14.0" layoutY="59.0" onAction="#ShowWaitList" text="Manage Wait List" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                </panes>
+                              </Accordion>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="477.0">
+                           <children>
+                              <AnchorPane fx:id="AymensPane" prefHeight="459.0" prefWidth="706.0">
+                                 <children>
+                                    <TableView fx:id="AllUsersTable" layoutY="93.0" onMouseClicked="#showPopup" prefHeight="366.0" prefWidth="704.0">
+                                      <columns>
+                                        <TableColumn fx:id="picture" editable="false" prefWidth="85.0" sortable="false" text="picture" />
+                                        <TableColumn fx:id="firstName" prefWidth="113.0" text="FirstName" />
+                                          <TableColumn fx:id="LastName" prefWidth="88.0" text="LastName" />
+                                          <TableColumn fx:id="mail" prefWidth="195.33331298828125" text="E-mail" />
+                                          <TableColumn fx:id="username" prefWidth="113.66668701171875" text="Fanny-username" />
+                                          <TableColumn fx:id="status" prefWidth="108.6666259765625" text="Status" />
+                                      </columns>
+                                    </TableView>
+                                    <Label fx:id="sortLabel" layoutX="31.0" layoutY="34.0" text="Sort by" />
+                                    <JFXComboBox fx:id="nature" layoutX="146.0" layoutY="28.0" onHiding="#filterType" prefHeight="25.0" prefWidth="149.0" promptText="Founder &amp; Investors" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <ImageView fx:id="profilePicture" fitHeight="85.0" fitWidth="98.0" layoutX="1.0" layoutY="3.0" onMouseClicked="#showProfile" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="userLoggedInName" layoutX="12.0" layoutY="84.0" prefHeight="33.0" prefWidth="145.0" text="Label" textAlignment="CENTER" textFill="#fcfafa" wrapText="true" />
+                  <Pane layoutX="-11.0" layoutY="-1.0" prefHeight="112.0" prefWidth="907.0" style="-fx-background-color: #0081FF;">
+                     <children>
+                        <MaterialDesignIconView fx:id="closeIcon" fill="WHITE" glyphName="CLOSE" layoutX="853.0" layoutY="38.0" onMouseClicked="#closeStage" size="22.0" />
+                        <Text fill="WHITE" layoutX="346.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Users" textAlignment="CENTER" wrappingWidth="221.000005453825">
+                           <font>
+                              <Font name="Roboto Medium" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

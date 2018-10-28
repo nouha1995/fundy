@@ -1,0 +1,291 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/template/fundTemplate.xhtml"
+	
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	 xmlns:rich="http://richfaces.org/rich"
+	 xmlns:p="http://primefaces.org/ui"
+	
+                xmlns:t="http://myfaces.apache.org/tomahawk">
+	
+<ui:define name="pageTitle">
+				HOME PAGE
+			</ui:define>
+<ui:define name="pageHead">
+ <!--<h:outputStylesheet library="css" name="cssNouha.css?v=1.1" />-->
+ <link rel="stylesheet" href="#{request.contextPath}/resources/css/cssNouha.css?#{startup.time}" />
+ <!-- <link rel="stylesheet" href="#{request.contextPath}/resources/css/bootstrapee74.css?#{startup.time}" /> -->
+  <h:outputScript library="js" name="jquery.min.js" />
+     
+    <link rel="stylesheet" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css"/>
+    <link rel="stylesheet" href="#{request.contextPath}/resources/css/stylesheet.css?#{startup.time}"/>
+    <script type='text/javascript' src="#{request.contextPath}/resources/js/jsNouha.js?#{startup.time}"></script>
+    
+    
+     
+</ui:define>
+	
+	<ui:define name="pageContent">
+
+
+		 <div class="page-title" >
+        <div class="container-fluid">
+            
+            <div class="row1 w-row" data-ix="fadein-bottom-scroll">
+            
+              <div class="w-colS w-col-31 w-col-stack">
+                        <div class="sidebar">
+                  
+											<div class='my-legend'>
+<div class='legend-title'></div>
+<div class='legend-scale'>
+<h:form id="plsForm">
+  <ul class='legend-labels'>
+    <li style="padding-bottom:5px" class="filter">
+    <span style='background:#8e44ad;'></span>
+    <a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Culture</a>
+    </li>
+    <li style="padding-bottom:5px" class="filter1"><span style='background:#d35400;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Hunger</a></li>
+    <li style="padding-bottom:5px" class="filter2"><span style='background:#27ae60;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Human Rights</a></li>
+    <li style="padding-bottom:5px" class="filter3"><span style='background:#fff146;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Education</a></li>
+    <li style="padding-bottom:5px" class="filter4"><span style='background:#68d0f0;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Technology</a></li>
+     <li style="padding-bottom:5px" class="filter5"><span style='background:#2ecc71;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Health</a></li>
+      <li style="padding-bottom:5px" class="filter6"><span style='background:#e74c3c;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Animals</a></li>
+       <li style="padding-bottom:5px" class="filter7"><span style='background:#4e6c8a;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">Environment</a></li>
+      <li style="padding-bottom:5px" class="filter8"><span style='background:#d35408;'></span><a style="color:#909497;font-weight: bold;margin-left:15px;font-size: 16px;">All</a></li>
+  
+  </ul>
+  
+        <h:inputHidden id="filter1-input" value="#{articleBean.filter}" />
+  
+  
+<h:commandButton  a:class="button register-button w-button" a:data-wait="Please wait..."  actionListener="#{articleBean.filterMe()}" value="filter">
+                            <f:ajax  render = "form_list:output" execute="@all"/>
+    
+                           </h:commandButton>
+                 </h:form>
+</div>
+
+</div>
+
+	
+                            <div class="w-dyn-list">
+                                <div class="sidebar-list w-dyn-items">
+                                    <div class="w-dyn-item">
+                                        <ul class="sidebar-list">
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div></div>
+                    </div>
+                   
+                <!--  <div class="w-col w-col-2 w-hidden-medium w-hidden-small w-hidden-tiny"></div>-->
+                <div class="w-col66 w-col8">        
+                        <div class="w-col w-col-1 w-col-stack w-hidden-small w-hidden-tiny"></div>
+                <div class="w-col w-col6 w-col-stack">
+                    <div class="contact-form forms-container1">
+                        <div class="register-success w-form">
+                            <form data-name="Email Form 2" id="email-form-2" name="email-form-2">
+                            <h:form enctype="multipart/form-data" id="prime-form" >
+                              <div id="wysihtml5-editor-toolbar">
+      <header>
+        <ul class="commands">
+          <li data-wysihtml5-command="bold" title="Make text bold (CTRL + B)" class="command command1" ></li>
+          <li data-wysihtml5-command="italic" title="Make text italic (CTRL + I)" class="command command2"></li>
+          <li data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list" class="command command3"></li>
+          <li data-wysihtml5-command="insertOrderedList" title="Insert an ordered list" class="command command4"></li>
+          <li data-wysihtml5-command="createLink" title="Insert a link" class="command command5"></li>
+          <li data-wysihtml5-command="insertImage" title="Insert an image" >
+          
+          </li>
+          <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" title="Insert headline 1" class="command command7"></li>
+          <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" title="Insert headline 2" class="command command8"></li>
+          <li data-wysihtml5-command-group="foreColor"  title="Color the selected text" class="command fore-color command9">
+            <ul>
+              <li data-wysihtml5-command="foreColor" class="silver" data-wysihtml5-command-value="silver"></li>
+              <li data-wysihtml5-command="foreColor" class="gray" data-wysihtml5-command-value="gray"></li>
+              <li data-wysihtml5-command="foreColor" class="maroon" data-wysihtml5-command-value="maroon"></li>
+              <li data-wysihtml5-command="foreColor" class="red" data-wysihtml5-command-value="red"></li>
+              <li data-wysihtml5-command="foreColor" class="purple" data-wysihtml5-command-value="purple"></li>
+              <li data-wysihtml5-command="foreColor" class="green" data-wysihtml5-command-value="green"></li>
+              <li data-wysihtml5-command="foreColor" class="olive" data-wysihtml5-command-value="olive"></li>
+              <li data-wysihtml5-command="foreColor" class="navy" data-wysihtml5-command-value="navy"></li>
+              <li data-wysihtml5-command="foreColor" class="blue" data-wysihtml5-command-value="blue"></li>
+            </ul>
+          </li>
+          <li data-wysihtml5-command="insertSpeech" title="Insert speech" class="command command10"></li>
+          <li data-wysihtml5-action="change_view" title="Show HTML" class="action"></li>
+        </ul>
+      </header>
+      <div data-wysihtml5-dialog="createLink" style="display: none;">
+        <label>
+          Link:
+          <input data-wysihtml5-dialog-field="href" value="http://"/>
+        </label>
+        <a data-wysihtml5-dialog-action="save">OK</a><a data-wysihtml5-dialog-action="cancel">Cancel</a>
+      </div>
+
+      <div data-wysihtml5-dialog="insertImage" style="display: none;">
+        <label>
+          Image:
+          <input data-wysihtml5-dialog-field="src" value="http://"/>
+        </label>
+        <a data-wysihtml5-dialog-action="save">OK</a><a data-wysihtml5-dialog-action="cancel">Cancel</a>
+      </div>
+    </div>
+   
+ 
+    <section>
+    
+       
+      <textarea  jsf:value="#{articleBean.body}" id="wysihtml5-editor" class="iarea" spellcheck="false"  autofocus= "autofocus" placeholder="enter here ....."
+        >
+      </textarea>
+ 
+      <h:inputHidden id="seize-input" value="#{articleBean.fontSize}" />
+     <h:inputHidden id="bold-input" value="#{articleBean.fontWeight}" />
+     <h:inputHidden id="italic-input" value="#{articleBean.fontStyle}" />
+     <h:inputHidden id="desordered-input" value="#{articleBean.desorderedList}"/>
+      <h:inputHidden id="color-input" value="#{articleBean.fontColor}" />
+      <div class="w-col w-col-15 w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+      <!--  <input class="input w-input" data-name="Name 3" id="name-3" maxlength="256" name="name-3"  hidden="hidden" placeholder="Enter your name" type="text" />-->
+     <div class="control-group" style="margin-top: 5px">
+
+     <ul>
+    <ui:repeat id="items" value="#{articleBean.names}" var="item">
+        <li>
+        <label class="container">
+            <input type="radio" jsf:id="item" a:name="#{hiddenItem.clientId}"
+                value="#{item}" a:checked="#{item eq articleBean.name ? 'checked' : null}" />
+                <span class="checkmark"></span>
+            <h:outputLabel for="item" value="#{item}" />
+            </label>
+        </li>
+    </ui:repeat>
+
+</ul>
+  <h:inputHidden id="selectedItem" binding="#{hiddenItem}" value="#{articleBean.name}"
+    rendered="#{facesContext.currentPhaseId.ordinal ne 6}" />
+
+<!-- This one won't display anything. -->
+
+  </div>
+      
+  
+    <div class="control-group" style="margin-top: 40px">
+  
+ 
+
+
+  </div> 
+
+   <style type="text/css">
+
+
+   </style>
+   
+    </section>
+                               <!--   <input class="input w-input" data-name="Name 3" id="name-3" maxlength="256" name="name-3" placeholder="Enter your name" type="text" jsf:value="#{articleBean.name}"/>
+                              <h:inputText value="" />
+                                  <input class="button register-button w-button" data-wait="Please wait..." type="submit" value="Submit" jsf:action="" /> 
+                              <h:inputText value="" style="}" />
+                                <textarea class="input textarea w-input" id="field" maxlength="5000" name="field" placeholder="Enter your Message"></textarea>-->
+                        
+                           <h:commandButton  a:class="button register-button w-button" a:data-wait="Please wait..."  actionListener="#{articleBean.saveArticle()}" value="create foum">
+                            <f:ajax  render = "form_list:output" execute="@all"/>
+                           </h:commandButton>
+                               <h:messages />
+                              <!--  <h:commandButton action="" value="submit" />-->
+
+  
+                            </h:form>
+                            </form>
+                            <div class="register-success w-form-done">
+                                <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="register-error w-form-fail">
+                                <div>Oops! Something went wrong while submitting the form</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                        </div>
+                <div class="w-col w-col-2 w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                
+            </div>
+      
+        </div>
+    
+    
+    </div>
+       
+    <div class="b-b page-title-after section" >	
+    
+        <div class="container-fluid">
+        <h:form id="form_list">
+            <div class="w-row">
+                <div class="w-col w-col-1 w-hidden-small w-hidden-tiny"></div>
+                <div class="w-col w-col-10">
+                    <div class="event-container overview">
+                        <div class="w-dyn-list">
+                            <div class="w-dyn-items">
+                            <h:dataTable    id="output" value="#{articleBean.haveArticles(articleBean.filter)}" var="article" columnClasses="column1" style="width: 950px;" >
+                             <h:column >
+                                <div class="w-dyn-item" data-ix="fadein-bottom-scroll">
+                              	
+                                    <a class="event w-inline-block" jsf:action="#{articleBean.currentArticle(article)}">
+                                        <div class="w-row">
+                                            <div class="w-clearfix w-col w-col-11">
+                                                <div class="categories list teaser-flex-grid-item-categorie" style="border-color: #ff9838; background-color: #ff9838;">
+                                                
+                                                    <div>English
+                                                    <h:outputLabel value="#{article.name}" />
+                                                    </div>
+                                                </div>
+                                                <h4 class="event-title"><h:outputLabel value="#{articleBean.limitBody(article.body)}...." /></h4></div>
+                                            <div class="w-clearfix w-col w-col-1">
+                                                <div class="more-button-icon w-icon-slider-right"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                              </h:column>
+                               </h:dataTable>
+                                
+                            <p:poll interval="5"  update="output" />
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-col w-col-1 w-hidden-small w-hidden-tiny"></div>
+            </div>
+            </h:form>
+        </div>
+    </div>
+  
+      <script type='text/javascript' src="#{request.contextPath}/resources/js/jsNouha.js?#{startup.time}"></script>
+  
+   <script  type="text/javascript">
+      var editor = new wysihtml5.Editor("wysihtml5-editor", {
+        toolbar:     "wysihtml5-editor-toolbar",
+        stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "#{request.contextPath}/resources/css/stylesheet.css?#{startup.time}"],
+        parserRules: wysihtml5ParserRules
+      });
+      
+      editor.on("load", function() {
+        var composer = editor.composer;
+        composer.selection.selectNode(editor.composer.element.querySelector("h1"));
+      });
+    </script>
+ 
+	</ui:define>
+
+
+</ui:composition>

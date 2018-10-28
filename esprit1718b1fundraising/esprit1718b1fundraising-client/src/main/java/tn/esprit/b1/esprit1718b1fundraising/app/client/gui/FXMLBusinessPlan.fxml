@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.gui.FXMLBusinessPlanController">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="1110.0">
+         <children>
+            <Text fill="#392b2b" layoutX="417.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Business Plan" textAlignment="CENTER" wrappingWidth="221.000005453825">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="837.0" layoutY="56.0" onAction="#save" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #0081FF;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="132.0" prefHeight="14.0" prefWidth="1080.0" spacing="2.0">
+         <children>
+            <Label minHeight="1.0" prefHeight="1.0" prefWidth="224.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+            <Circle fill="#e8e9eb" radius="7.0" stroke="#f39c12" strokeType="INSIDE" strokeWidth="3.0" />
+            <Label prefHeight="4.0" prefWidth="283.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+            <Circle fill="#e8e9eb" radius="7.0" stroke="#f39c12" strokeType="INSIDE" strokeWidth="3.0" />
+            <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+         </children>
+      </HBox>
+      <Text layoutX="297.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Plan" textAlignment="CENTER" wrappingWidth="149.13671875">
+         <font>
+            <Font name="Roboto Light" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="555.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More Info" textAlignment="CENTER" wrappingWidth="197.1367210149765">
+         <font>
+            <Font name="Roboto Light" size="14.0" />
+         </font>
+      </Text>
+      <VBox layoutX="158.0" layoutY="176.0" prefHeight="438.0" prefWidth="422.0" spacing="20.0">
+         <children>
+            <HBox spacing="8.0">
+               <children>
+                  <JFXTextField fx:id="creator" focusColor="#0081ff" labelFloat="true" prefHeight="31.0" prefWidth="232.0" promptText="Project creator" unFocusColor="#0081ff">
+                     <font>
+                        <Font name="Roboto Medium" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="adress" focusColor="#00add8" labelFloat="true" prefHeight="25.0" prefWidth="395.0" promptText="Adress" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="phone" focusColor="#00add8" labelFloat="true" promptText="Phone Number" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="cin" focusColor="#00add8" labelFloat="true" promptText="Identity Number" unFocusColor="#0081ff" />
+            <JFXTextArea fx:id="description" maxWidth="404.0" minWidth="404.0" prefHeight="98.0" prefWidth="404.0" promptText="Additional Information" unFocusColor="#0081ff" />
+         </children>
+      </VBox>
+      <VBox layoutX="630.0" layoutY="167.0" prefHeight="329.0" prefWidth="354.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="capital" focusColor="#0081ff" labelFloat="true" prefHeight="31.0" prefWidth="226.0" promptText="permanent capitals" unFocusColor="#0081ff">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="asset" focusColor="#0081ff" labelFloat="true" prefHeight="30.0" prefWidth="365.0" promptText="assets" unFocusColor="#0081ff">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="stock" focusColor="#0081ff" labelFloat="true" prefHeight="19.0" prefWidth="226.0" promptText="stock" unFocusColor="#0081ff">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="liab" focusColor="#0081ff" labelFloat="true" layoutX="10.0" layoutY="61.0" prefHeight="11.0" prefWidth="226.0" promptText="liability" unFocusColor="#0081ff">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="debt" promptText="debt" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="legal" promptText="Legal risk" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="technical" promptText="Technical risk" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="political" promptText="Political risk" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="financial" promptText="Financial risk" unFocusColor="#0081ff" />
+            <JFXTextField fx:id="market" prefHeight="14.0" prefWidth="354.0" promptText="Market risk" unFocusColor="#0081ff" />
+         </children>
+      </VBox>
+      <Label fx:id="war1" layoutX="1017.0" layoutY="184.0" prefHeight="29.0" prefWidth="88.0" />
+      <Label fx:id="war2" layoutX="1017.0" layoutY="226.0" prefHeight="29.0" prefWidth="88.0" />
+      <Label fx:id="war3" layoutX="1017.0" layoutY="278.0" prefHeight="29.0" prefWidth="88.0" />
+      <Label fx:id="war4" layoutX="1017.0" layoutY="325.0" prefHeight="29.0" prefWidth="88.0" />
+      <Label fx:id="war5" layoutX="1017.0" layoutY="361.0" prefHeight="29.0" prefWidth="88.0" />
+   </children>
+</AnchorPane>

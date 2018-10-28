@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.gui.ContactsController">
+    <children>
+      <AnchorPane id="AnchorPane" fx:id="paneaffiche" layoutX="-75.0" layoutY="-14.0" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="115.0" layoutY="35.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Pending Projects" />
+            <Separator layoutX="78.0" layoutY="78.0" prefHeight="4.0" prefWidth="1213.0" />
+            <VBox layoutX="71.0" layoutY="143.0" spacing="30.0" />
+            <VBox layoutX="636.0" layoutY="143.0" spacing="30.0" />
+            <Pagination layoutX="391.0" layoutY="80.0" prefHeight="57.0" prefWidth="369.0" />
+            <JFXListView fx:id="listProjects1" layoutX="78.0" layoutY="171.0" prefHeight="460.0" prefWidth="691.0" />
+            <JFXButton layoutX="1070.0" layoutY="621.0" onAction="#analyser" prefHeight="42.0" prefWidth="195.0" text="Analyse" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="paneanalyse" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="19.0" layoutY="17.0" prefHeight="30.0" prefWidth="392.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Risk Analyse" />
+            <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+            <HBox layoutX="57.0" layoutY="137.0" spacing="10.0" />
+            <HBox layoutX="57.0" layoutY="217.0" spacing="10.0" />
+            <Label layoutX="714.0" layoutY="342.0" prefHeight="30.0" prefWidth="300.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Calculate working capital" />
+            <Pane layoutX="742.0" layoutY="503.0" prefHeight="146.0" prefWidth="370.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="30.0" prefWidth="300.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Result..." />
+                  <Label fx:id="text" layoutX="12.0" layoutY="44.0" prefHeight="91.0" prefWidth="346.0" text="Label" />
+               </children>
+            </Pane>
+            <TitledPane animated="false" layoutX="3.0" layoutY="80.0" prefHeight="528.0" prefWidth="703.0" style="-fx-background-color: #6ba2c9;" styleClass="titledPane" text="Give note " textFill="#292797" underline="true">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="406.0" prefWidth="646.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="336.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="138.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="riskiuno" layoutX="-2.0" layoutY="30.0" prefHeight="30.0" prefWidth="411.0">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font></Label>
+                                    <Label fx:id="riskdeux" layoutX="-4.0" layoutY="78.0" prefHeight="30.0" prefWidth="411.0">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font></Label>
+                                    <Separator layoutX="416.0" layoutY="123.0" prefHeight="25.0" prefWidth="195.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <JFXComboBox fx:id="risk" layoutY="14.0" prefHeight="25.0" prefWidth="135.0" />
+                                    <JFXComboBox fx:id="riskdo" layoutY="68.0" prefHeight="25.0" prefWidth="135.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label fx:id="risktrio" layoutX="-9.0" layoutY="14.0" prefHeight="30.0" prefWidth="411.0">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font></Label>
+                                    <Label fx:id="riskquater" layoutX="-9.0" layoutY="58.0" prefHeight="30.0" prefWidth="411.0">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <JFXComboBox fx:id="risktrois" layoutY="14.0" prefHeight="25.0" prefWidth="135.0" />
+                                    <JFXComboBox fx:id="riskkwatro" layoutY="58.0" prefHeight="25.0" prefWidth="135.0" />
+                                    <Separator layoutX="-13.0" layoutY="104.0" prefHeight="34.0" prefWidth="216.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="riskcinq" prefHeight="30.0" prefWidth="411.0" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="riskchinko" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </content>
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </TitledPane>
+            <PieChart layoutX="731.0" layoutY="71.0" prefHeight="232.0" prefWidth="392.0" />
+            <JFXButton layoutX="1079.0" layoutY="314.0" onAction="#showStatistics" prefHeight="30.0" prefWidth="127.0" style="-fx-background-color: #6ba2c9;" text="show statistics" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="706.0" layoutY="380.0" prefHeight="30.0" prefWidth="119.0" text="immobilasation">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="706.0" layoutY="414.0" prefHeight="30.0" prefWidth="146.0" text="Capital permanant">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="immobilisation" layoutX="828.0" layoutY="382.0" />
+            <TextField fx:id="cap_per" layoutX="828.0" layoutY="417.0" />
+            <JFXButton fx:id="calcul" layoutX="1025.0" layoutY="382.0" onAction="#calculer" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #6ba2c9;" text="Calculate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></JFXButton>
+            <TextField fx:id="result" layoutX="1025.0" layoutY="417.0" />
+            <PieChart fx:id="pie" layoutX="741.0" layoutY="81.0" prefHeight="232.0" prefWidth="392.0" />
+            <JFXButton layoutX="1143.0" layoutY="536.0" onAction="#validateProject" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #6ba2c9;" text="Analyse" textFill="#fffbfb" />
+            <JFXButton layoutX="1143.0" layoutY="576.0" onAction="#showProjects" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #6ba2c9;" text="showPojects" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+   </children>
+</AnchorPane>

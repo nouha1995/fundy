@@ -1,0 +1,135 @@
+
+
+@font-face{
+.w-col-6 {
+    width: 80%;
+}
+}
+
+ .my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+
+
+
+
+
+
+.font-color-red{
+	color:red;
+	
+}
+.font-color-blue{
+	color:blue;
+	
+}
+.font-color-gray{
+	color:gray;
+	
+}
+.font-color-maroon{
+	color:maroon;
+	
+}
+.font-color-purple{
+	color:purple;
+	
+}
+.font-color-silver{
+	color:silver;
+	
+}
+.font-color-green{
+	color:green;
+	
+}
+.font-color-olive{
+	color:olive;
+	
+}
+.font-color-navy{
+	color:navy;
+	
+}
+.font-color-black{
+	color:black;
+	
+}	
+
+
+.font-seize-h1{
+	
+	font-size: 12px;
+}
+.font-seize-h2{
+	
+	font-size: 16px;
+}
+.font-style-italic{
+	font-style: italic;
+}
+
+.font-style-normal{
+	font-style: normal;
+}
+
+.font-weight-bolder{
+	font-weight: bold;
+}
+
+.font-weight-normal{
+	font-weight: normal;
+}
+
+.cssClass{
+	
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+	
+}
+
+.cssClass:focus {
+    
+    outline-color: darkorange;
+    
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.main.LoginController">
+   <children>
+      <Pane fx:id="popUpHolder" prefHeight="118.0" prefWidth="181.0" styleClass="login-card">
+         <children>
+            <JFXButton fx:id="btnLogoff" layoutX="7.0" layoutY="7.0" onAction="#returnLoginPage" prefHeight="50.0" prefWidth="166.0" style="-fx-alignment: LEFT;" text="Login">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="KEYBOARD_RETURN" size="16.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" layoutX="7.0" layoutY="64.0" onAction="#close" prefHeight="50.0" prefWidth="166.0" style="-fx-alignment: LEFT;" text="Close">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="CLOSE" size="16.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="245.0" prefWidth="900.0" style="-fx-background-color: #1784dd;">
+               <children>
+                  <Pane layoutX="222.0" layoutY="181.0" prefHeight="30.0" prefWidth="456.0" style="-fx-background-color: #F4F4F4; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                  <Text fill="WHITE" layoutX="240.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FUNDRAISING" textAlignment="CENTER" wrappingWidth="455.9999942779541">
+                     <font>
+                        <Font name="Roboto Medium" size="32.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="411.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login panel" textAlignment="CENTER">
+                     <font>
+                        <Font name="Roboto Medium" size="22.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="btnAccount" buttonType="RAISED" layoutX="686.0" layoutY="46.0" onAction="#showActions" styleClass="btn-account" text="Home" />
+               </children>
+            </Pane>
+            <StackPane fx:id="resetPasswordPane" layoutX="205.0" layoutY="268.0" />
+            <AnchorPane fx:id="loginAnchor" layoutX="205.0" layoutY="190.0" prefHeight="357.0" prefWidth="491.0" styleClass="login-card">
+               <children>
+                  <Label layoutY="37.0" prefHeight="42.0" prefWidth="325.0" style="-fx-border-width: 0 0 0 4; -fx-border-color: #ff3b9d;" text="LOGIN" textFill="#ff3b9d">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="250.0" onAction="#LogIn" prefHeight="42.0" prefWidth="132.0" ripplerFill="#07a0c3" style="-fx-background-color: #0081FF; -fx-text-fill: white;" text="Login">
+                     <font>
+                        <Font name="Roboto Black" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="usernameTF" focusColor="#559af5" labelFloat="true" layoutX="101.0" layoutY="142.0" prefHeight="30.0" prefWidth="290.0" promptText="Enter email / phone number" style="-fx-text-fill: Black;" unFocusColor="#948b8b">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordTF" focusColor="#5c69f8" labelFloat="true" layoutX="101.0" layoutY="201.0" prefHeight="28.0" prefWidth="290.0" promptText="Enter password" style="-fx-text-fill: Black;" unFocusColor="#838282">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label layoutX="185.0" layoutY="326.0" onMouseClicked="#resetPassword" text="Forgot account?" textFill="#5b5353" textOverrun="CLIP" underline="true" />
+                  <Label layoutX="146.0" layoutY="302.0" onMouseClicked="#registerNewUser" text="Not a member ? register from here" underline="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

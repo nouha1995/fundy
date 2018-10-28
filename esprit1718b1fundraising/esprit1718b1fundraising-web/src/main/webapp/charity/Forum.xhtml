@@ -1,0 +1,198 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/template/fundTemplate.xhtml"
+	
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	 xmlns:rich="http://richfaces.org/rich"
+	  xmlns:p="http://primefaces.org/ui"
+	>
+	
+<ui:define name="pageTitle">
+				HOME PAGE
+			</ui:define>
+<ui:define name="pageHead">
+ <!--<h:outputStylesheet library="css" name="cssNouha.css?v=1.1" />-->
+ <link rel="stylesheet" href="#{request.contextPath}/resources/css/cssNouha.css?#{startup.time}" />
+ <!-- <link rel="stylesheet" href="#{request.contextPath}/resources/css/bootstrapee74.css?#{startup.time}" /> -->
+  <h:outputScript library="js" name="jquery.min.js" />
+     
+    
+    
+     
+</ui:define>
+	
+	<ui:define name="pageContent">
+
+    <div class="page-container">
+        <div class="page-title">
+            <div class="container-fluid">
+                <ul class="location">
+                    <li class="location-item"><a class="location-item-link" href="#{request.contextPath}/charity/CreateForum.jsf">Forums</a>
+                        <div class="location-item-slash">/</div>
+                    </li>
+                    <li class="location-item"><a class="location-item-link" href="../events-overview.html">Events</a>
+                        <div class="location-item-slash">/</div>
+                    </li>
+                    <li class="location-item"><a class="active location-item-link" href="#">University Basketball</a></li>
+                </ul>
+                <div class="row w-row" data-ix="fadein-bottom-scroll">
+                    <div class="w-col w-col-3 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    <div class="w-col w-col-8 w-col-stack">
+                        <h1>University Basketball</h1></div>
+                    <div class="w-col w-col-1 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-b page-title-after section">
+            <div class="container-fluid" data-ix="subpage-item-show">
+                <div class="reverse-row row w-row">
+                    <div class="w-col w-col-3 w-col-stack">
+                        <div class="sidebar">
+                            <h4 class="sidebar-headline">Start Time</h4>
+                            <div>February 12, 2017<h:outputLabel value="#{articleBean.body}" /></div>
+                            <h4 class="sidebar-headline">End Time</h4>
+                            <div>February 23, 2017</div>
+                            <h4 class="sidebar-headline">Location</h4>
+                            <div>School</div>
+                            <h4 class="sidebar-headline">Speekers</h4>
+                            <div class="w-dyn-list">
+                                <div class="sidebar-list w-dyn-items">
+                                    <div class="w-dyn-item">
+                                        <ul class="sidebar-list">
+                                            <li>
+                                                <div>Bob Sharp</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><a class="button sidebar-button w-button" href="../contact.html">Join this Event</a></div>
+                    </div>
+                   
+                    <div class="w-col w-col-8 w-col-stack">
+                        <div class="detail-image" style="background-image: url('/esprit1718b1fundraising-web/resources/img/58a06b5cf703a9087cc33c68_Studies_46.jpg');"></div>
+                        <div class="w-richtext" data-ix="hero-fade-in-onload">
+                          
+                                <blockquote> 
+                                <h:outputLabel id="weight" value="#{articleBean.testBody()}" escape="false" styleClass="#{articleBean.fontWeight} #{articleBean.fontStyle} #{articleBean.fontColor} #{articleBean.fontSize}"/>
+                                
+                                
+                              </blockquote>
+                                                               
+                            <p>Dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+                        </div>
+                        <div class="blogpost-author w-clearfix"><img class="blog-author-photo"   src="#{request.contextPath}/resources/img/#{commentBean.currentUser.nouhaImage}" />
+                            <h5 class="blogpost-author-title">Main Speaker</h5>
+                            <h3 class="blogpost-author-name"><h:outputLabel value="#{commentBean.currentUser.firstName} #{commentBean.currentUser.lastName}" /></h3></div>
+                          
+                              
+                 <div class="w-row">
+                      <div class="w-col w-col-8" data-ix="hero-fade-in-onload">
+                             <div class="docu-headline" >
+                             <h:form >
+                              <h:panelGrid columns="2" style="width:150%" >
+                              <h:inputText value="#{commentBean.body}" styleClass="cssClass"/>
+                              <div class="w-col w-col-8 w-col-stack">
+                              <div class="section-more">
+                              <h:commandButton a:class="button dark transparent w-button" value="post a comment" actionListener="#{commentBean.saveComment()}" >
+                              <f:ajax  render = "form_list:output" execute="@all"/>
+                              </h:commandButton>
+                              </div>
+                              </div>
+                              </h:panelGrid>
+                              </h:form>
+                              <h:form id="form_list">
+                      <h:dataTable id="output" value="#{commentBean.commmentsForCurrentArticle}" var="comment" columnClasses="column1"  style="width: 400px;">
+                      <h:column>
+                               <div class="docu-list">
+                               <div class="blogpost-author w-clearfix"><img class="blog-author-photo"   src="#{request.contextPath}/resources/img/#{comment.utilisateur.nouhaImage}" />
+                                </div>
+                                   <div class="docu-list-line w-clearfix">
+                                       <div class="docu-list-line-number">
+                                            <div>1</div>
+                                </div>
+                                <div class="docu-list-line-text"><h:outputLabel value="#{comment.body}" /></div>
+                            </div>
+                        </div>
+                       
+                         </h:column>
+                    </h:dataTable>
+                    <p:poll interval="5"  update="output" />
+                    </h:form>
+                    </div>
+                     </div>
+                  </div>
+                            
+                    </div>
+                    <div class="w-col w-col-1 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="section">
+                <div class="container-fluid">
+                    <div class="w-row">
+                        <div class="w-col w-col-4 w-col-stack">
+                            <div class="logo logo-footer">studies</div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+                            </div>
+                            <div class="footer-text">
+                                <p>Copyright © studies
+                                    <br/>Template design by <a href="https://webflow.com/templates/designers/nicolas-kayser" target="_blank">Nicolas Kayser</a></p>
+                            </div>
+                        </div>
+                        <div class="w-col w-col-2 w-col-stack w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                        <div class="w-col w-col-4 w-col-stack">
+                            <h4>Sitemap</h4>
+                            <ul class="sitemap">
+                                <li><a class="sitemap-link" href="../index.html">Home</a></li>
+                                <li><a class="sitemap-link" href="../about-2/about.html">About Us</a></li>
+                                <li><a class="sitemap-link" href="../about-2/speakers.html">Speakers</a></li>
+                                <li><a class="sitemap-link" href="../course/course-overview.html">Courses</a></li>
+                                <li><a class="sitemap-link" href="../events-overview.html">Events</a></li>
+                                <li><a class="sitemap-link" href="../news/news-overview.html">News</a></li>
+                                <li><a class="sitemap-link" href="../elements/documentation.html">Documentation</a></li>
+                                <li><a class="sitemap-link" href="../elements/licenses.html">Licenses</a></li>
+                                <li><a class="sitemap-link" href="../elements/404.html">404</a></li>
+                                <li><a class="sitemap-link" href="../elements/styleguide.html">Styleguide</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-col w-col-2 w-col-stack">
+                            <h4>Contact Us</h4>
+                            <div class="footer-text">
+                                <p>+123 45678910
+                                    <br/>+123 452678910
+                                    <br/>info@nicolaskayser.<span>com</span></p>
+                            </div>
+                            <div class="footer-text">
+                                <ul class="footer-social-media-list w-clearfix">
+                                    <li class="footer-social-media-item">
+                                        <a class="facebook footer-social-media-link w-inline-block" href="#"></a>
+                                    </li>
+                                    <li class="footer-social-media-item">
+                                        <a class="footer-social-media-link twitter w-inline-block" href="#"></a>
+                                    </li>
+                                    <li class="footer-social-media-item">
+                                        <a class="footer-social-media-link google w-inline-block" href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+   
+
+   
+  
+   
+ 
+	</ui:define>
+
+
+</ui:composition>

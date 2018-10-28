@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="439.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.gui.ShowProjectFounderController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="399.0" prefWidth="445.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);;" styleClass="card">
+         <children>
+            <Label layoutX="38.0" layoutY="132.0" prefHeight="17.0" prefWidth="76.0" text="Title:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="168.0" text="Description:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="193.0" prefHeight="27.0" prefWidth="101.0" text="Cathegory:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="229.0" prefHeight="27.0" prefWidth="123.0" text="Financement:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="264.0" prefHeight="17.0" prefWidth="76.0" text="CA:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="255.0" />
+            <ImageView fx:id="imageprojet" fitHeight="150.0" fitWidth="200.0" layoutX="245.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="label2" layoutX="166.0" layoutY="173.0" prefHeight="17.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" layoutX="166.0" layoutY="198.0" prefHeight="17.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" layoutX="166.0" layoutY="234.0" prefHeight="17.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label5" layoutX="166.0" layoutY="269.0" prefHeight="17.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label6" layoutX="166.0" layoutY="255.0" prefHeight="17.0" prefWidth="200.0" />
+            <Label fx:id="label1" layoutX="166.0" layoutY="132.0" prefHeight="17.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

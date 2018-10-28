@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="684.0" prefWidth="768.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.charity.CreateChProjectNController">
+	<!-- TODO Add Nodes -->
+  <children>
+      <JFXButton fx:id="closeBtn" onAction="#closeStage" />
+      <StackPane fx:id="stackPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane fx:id="tabPane" prefHeight="684.0" prefWidth="1092.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Organization">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1061.0">
+                           <children>
+                              <AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="767.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane layoutX="-1.0" prefHeight="100.0" prefWidth="768.0" style="-fx-background-color: #0081FF;">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="111.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's start with some basic information about your organization" textAlignment="CENTER" wrappingWidth="496.000005453825">
+                                             <font>
+                                                <Font name="Roboto Medium" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <MaterialDesignIconView fx:id="iconClose" fill="WHITE" glyphName="CLOSE" layoutX="731.0" layoutY="39.0" onMouseClicked="#closeStage" size="22.0" />
+                                       </children>
+                                    </Pane>
+                                    <JFXButton fx:id="NextBtn1" buttonType="RAISED" layoutX="389.0" layoutY="590.0" onAction="#NextStep1" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: #008F82;" text="Next" textFill="WHITE">
+                                       <font>
+                                          <Font name="Roboto Medium" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CHECK" size="16.0" wrappingWidth="34.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="previewBtn1" buttonType="RAISED" layoutX="183.0" layoutY="590.0" onAction="#previewAction1" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: #f39c12; -fx-alignment: LEFT; -fx-padding: 0 0 0 20;" text="Preview" textFill="WHITE">
+                                       <font>
+                                          <Font name="Roboto Medium" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE" size="16.0" wrappingWidth="34.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="122.0" prefHeight="14.0" prefWidth="692.0" spacing="2.0">
+                                       <children>
+                                          <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+                                          <Circle fill="#e8e9eb" radius="7.0" stroke="#f39c12" strokeType="INSIDE" strokeWidth="3.0" />
+                                          <Label prefHeight="4.0" prefWidth="283.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+                                          <Circle fill="#e8e9eb" radius="7.0" stroke="#f39c12" strokeType="INSIDE" strokeWidth="3.0" />
+                                          <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+                                       </children>
+                                    </HBox>
+                                    <JFXTextField fx:id="orgName" focusColor="#0081ff" labelFloat="true" layoutX="60.0" layoutY="179.0" onKeyReleased="#nameOrgReleased" prefHeight="31.0" prefWidth="585.0" promptText="What is your organization’s registered name?*">
+                                       <font>
+                                          <Font name="Roboto Medium" size="13.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXDatePicker fx:id="orgYear" layoutX="284.0" layoutY="300.0" onAction="#yearOrgAction" prefHeight="28.0" prefWidth="358.0" />
+                                    <Text fill="#0081ff" layoutX="144.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Founded*" wrappingWidth="95.51123046875">
+                                       <font>
+                                          <Font name="Roboto Medium" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="orgCountry" layoutX="283.0" layoutY="240.0" onAction="#countryOrgAction" prefHeight="25.0" prefWidth="361.0" promptText="Your Country" />
+                                    <Text fill="#0081ff" layoutX="61.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your organization’s Country of Registration*" wrappingWidth="237.51123046875">
+                                       <font>
+                                          <Font name="Roboto Medium" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#0081ff" layoutX="61.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What types of programs does your organization manage? Check all that apply.*" wrappingWidth="182.51123046875">
+                                       <font>
+                                          <Font name="Roboto Medium" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXCheckBox fx:id="animalsBox" layoutX="284.0" layoutY="368.0" onAction="#handleButtonAction" text="Animals" />
+                                    <JFXCheckBox fx:id="disasterRecoveryBox" layoutX="410.0" layoutY="405.0" onAction="#handleButtonAction" prefHeight="20.0" prefWidth="120.0" text="Disaster Recovery" />
+                                    <JFXCheckBox fx:id="DemocracyBox" layoutX="534.0" layoutY="405.0" onAction="#handleButtonAction" text="Democracy and Governance" />
+                                    <JFXCheckBox fx:id="cultureBox" layoutX="410.0" layoutY="369.0" onAction="#handleButtonAction" text="Arts and Culture" />
+                                    <JFXCheckBox fx:id="childrenBox" layoutX="534.0" layoutY="368.0" onAction="#handleButtonAction" text="Children" />
+                                    <JFXCheckBox fx:id="healthBox" layoutX="284.0" layoutY="480.0" onAction="#handleButtonAction" text="Health" />
+                                    <JFXCheckBox fx:id="humanRightBox" layoutX="410.0" layoutY="480.0" onAction="#handleButtonAction" text="Human Rights" />
+                                    <JFXCheckBox fx:id="humanitarianAssisBox" layoutX="534.0" layoutY="480.0" onAction="#handleButtonAction" text="Humanitarian Assistance" />
+                                    <JFXCheckBox fx:id="educationBox" layoutX="284.0" layoutY="445.0" onAction="#handleButtonAction" text="Education" />
+                                    <JFXCheckBox fx:id="climateBox" layoutX="284.0" layoutY="405.0" onAction="#handleButtonAction" text="Climate Change" />
+                                    <JFXCheckBox fx:id="environmentBox" layoutX="410.0" layoutY="445.0" onAction="#handleButtonAction" text="Environment" />
+                                    <JFXCheckBox fx:id="economicBox" layoutX="534.0" layoutY="445.0" onAction="#handleButtonAction" text="Economic Development" />
+                                    <JFXCheckBox fx:id="hungerBox" layoutX="284.0" layoutY="518.0" onAction="#handleButtonAction" text="Hunger" />
+                                    <JFXCheckBox fx:id="microfinanceBox" layoutX="410.0" layoutY="518.0" onAction="#handleButtonAction" text="Microfinance" />
+                                    <JFXCheckBox fx:id="TechBox" layoutX="534.0" layoutY="518.0" onAction="#handleButtonAction" text="Technology" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Charity Project">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="768.0">
+                                 <children>
+                                    <AnchorPane prefHeight="650.0" prefWidth="729.0">
+                                       <children>
+                                          <AnchorPane prefHeight="100.0" prefWidth="768.0" style="-fx-background-color: #0081FF;">
+                                             <children>
+                                                <Text fill="WHITE" layoutX="228.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Charity Project" textAlignment="CENTER" wrappingWidth="221.000005453825">
+                                                   <font>
+                                                      <Font name="Roboto Medium" size="20.0" />
+                                                   </font>
+                                                </Text>
+                                                <MaterialDesignIconView fx:id="iconClose1" fill="WHITE" glyphName="CLOSE" layoutX="732.0" layoutY="39.0" onMouseClicked="#closeStage" size="22.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <HBox alignment="CENTER" layoutX="7.0" layoutY="154.0" prefHeight="14.0" prefWidth="651.0" spacing="2.0">
+                                             <children>
+                                                <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+                                                <Circle fill="#e8e9eb" radius="7.0" stroke="#f39c12" strokeType="INSIDE" strokeWidth="3.0" />
+                                                <Label prefHeight="4.0" prefWidth="283.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+                                                <Circle fill="#e8e9eb" radius="7.0" stroke="#f39c12" strokeType="INSIDE" strokeWidth="3.0" />
+                                                <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #008F82; -fx-min-height: 4; -fx-pref-height: 4;" />
+                                             </children>
+                                          </HBox>
+                                          <Text layoutX="72.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="vfvfv" textAlignment="CENTER" wrappingWidth="149.13671875">
+                                             <font>
+                                                <Font name="Roboto Light" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="355.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company and Placement info" textAlignment="CENTER" wrappingWidth="197.1367210149765">
+                                             <font>
+                                                <Font name="Roboto Light" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXTextField fx:id="chProjectName" focusColor="#0081ff" labelFloat="true" layoutX="72.0" layoutY="187.0" onKeyReleased="#nameChPAction" prefHeight="31.0" prefWidth="508.0" promptText="What is your Charity Project's Name?*">
+                                             <font>
+                                                <Font name="Roboto Medium" size="13.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXDatePicker fx:id="endChPDate" layoutX="359.0" layoutY="254.0" onAction="#endDateChPAction" prefHeight="28.0" prefWidth="224.0" />
+                                          <Text fill="#0081ff" layoutX="359.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validation Date ends in*" wrappingWidth="143.51123046875">
+                                             <font>
+                                                <Font name="Roboto Medium" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXTextArea fx:id="descriptionChP" layoutX="72.0" layoutY="334.0" onKeyReleased="#despChPAction" prefHeight="100.0" prefWidth="520.0" promptText="describe your aim from this charity project *">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextArea>
+                                          <Text fill="#0081ff" layoutX="72.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validation Date starts in *" wrappingWidth="149.51123046875">
+                                             <font>
+                                                <Font name="Roboto Medium" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXDatePicker fx:id="startChPDate" layoutX="72.0" layoutY="256.0" onAction="#startDateChPAction" prefHeight="28.0" prefWidth="224.0" />
+                                          <JFXButton fx:id="eyeBtn" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="618.0" layoutY="80.0" prefHeight="39.0" prefWidth="52.0" styleClass="floating-button" stylesheets="@../gui/style.css" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="1.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="EYE" size="22.0" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="NextBtn2" buttonType="RAISED" layoutX="389.0" layoutY="590.0" onAction="#NextStep2" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: #008F82;" text="Next" textFill="WHITE">
+                                             <font>
+                                                <Font name="Roboto Medium" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CHECK" size="16.0" wrappingWidth="34.0" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="previewBtn2" buttonType="RAISED" layoutX="183.0" layoutY="590.0" onAction="#previewAction1" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: #f39c12; -fx-alignment: LEFT; -fx-padding: 0 0 0 20;" text="Preview" textFill="WHITE">
+                                             <font>
+                                                <Font name="Roboto Medium" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE" size="16.0" wrappingWidth="34.0" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Last Step">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1063.0">
+                           <children>
+                              <JFXButton fx:id="submitChP" buttonType="RAISED" layoutX="292.0" layoutY="530.0" onAction="#submitChPAction" prefHeight="64.0" prefWidth="184.0" style="-fx-background-color: rgb(0, 166, 90); -fx-text-fill: white; -fx-font-size: 14; -fx-font-weight: bold;" text="Submit" />
+                              <JFXButton fx:id="chPPictureBtn" layoutX="28.0" layoutY="74.0" onAction="#chPPictureAction" text="." textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fx:id="chPPicture" fitHeight="249.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../gui/tools/1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="orgLogoBtn" layoutX="415.0" layoutY="74.0" onAction="#orgLogoAction" text="." textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fx:id="orgLogo" fitHeight="249.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../gui/tools/1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <Label layoutX="61.0" layoutY="346.0" prefHeight="34.0" prefWidth="210.0" text="Upload image for your Charity project" />
+                              <Label layoutX="474.0" layoutY="346.0" prefHeight="34.0" prefWidth="191.0" text="Upload logo for your Organization" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </JFXTabPane>
+         </children>
+      </StackPane>
+   </children>
+
+</AnchorPane>

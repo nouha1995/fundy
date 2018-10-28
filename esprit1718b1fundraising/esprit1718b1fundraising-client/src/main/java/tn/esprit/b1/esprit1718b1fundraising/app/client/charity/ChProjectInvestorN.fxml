@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="1105.0" stylesheets="@stylesN.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.charity.ChProjectInvestorNController">
+   <children>
+      <VBox layoutX="23.0" layoutY="23.0" prefHeight="274.0" prefWidth="320.0" style="-fx-background-color: #00A8FF;" styleClass="card-unpadded">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="320.0" spacing="20.0" style="-fx-background-color: #00A0F3;">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gui/tools/appoint.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="20.0" prefWidth="233.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17px;" text="Charity Project" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="62.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="chPNameLabel" prefHeight="35.0" prefWidth="191.0" style="-fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold;" text="Charity Project  Name">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="1.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="chPstartDateLabel" prefHeight="35.0" prefWidth="181.0" style="-fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold;" text="start Date">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="1.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="65.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="chPEndDateLabel" prefHeight="35.0" prefWidth="185.0" style="-fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold;" text="End Date">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="1.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="23.0" layoutY="313.0" prefHeight="358.0" prefWidth="320.0" spacing="20.0" styleClass="card-unpadded">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="320.0" spacing="20.0" style="-fx-background-color: #00A65A;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gui/tools/add.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="20.0" prefWidth="233.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17px;" text="Organization" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="62.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="orgNameLabel" prefHeight="35.0" prefWidth="191.0" style="-fx-text-fill: Black; -fx-font-size: 13px; -fx-font-weight: normal;" text="Organization Name">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="1.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="orgYearLabel" prefHeight="35.0" prefWidth="181.0" style="-fx-text-fill: black; -fx-font-size: 13px; -fx-font-weight: normal;" text="Year Founded">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="1.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="65.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="orgProgramLabel" prefHeight="35.0" prefWidth="185.0" style="-fx-text-fill: black; -fx-font-size: 13px; -fx-font-weight: normal;" text="Our Goal program">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar progress="1.0" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="359.0" layoutY="33.0" prefHeight="636.0" prefWidth="734.0" styleClass="card-unpadded">
+         <children>
+            <TitledPane animated="false" layoutX="3.0" layoutY="6.0" prefHeight="258.0" prefWidth="724.0" styleClass="blue-titledPane" text="Our Goals">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="722.0">
+                     <children>
+                        <ImageView fx:id="chPPicture" fitHeight="231.0" fitWidth="724.0" pickOnBounds="true" preserveRatio="true" />
+                     </children></AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="3.0" layoutY="276.0" prefHeight="370.0" prefWidth="724.0" styleClass="blue-titledPane" text="Your Questions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="722.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="117.0" prefWidth="699.0" styleClass="card-unpadded">
+                           <children>
+                              <VBox layoutX="15.0" layoutY="14.0" prefHeight="64.0" prefWidth="181.0" spacing="10.0">
+                                 <children>
+                                    <Label prefHeight="19.0" prefWidth="183.0" text="Forum" />
+                                 </children>
+                              </VBox>
+                              <TextField fx:id="comment" layoutX="10.0" layoutY="46.0" prefHeight="29.0" prefWidth="572.0" promptText="write here" styleClass="search-box" />
+                              <JFXButton fx:id="commentBtn" layoutX="606.0" layoutY="45.0" onAction="#commentAction" ripplerFill="#0ff75e" style="-fx-background-color: #AAAAAA;" text="share" />
+                           </children>
+                        </AnchorPane>
+                        <StackPane fx:id="stackPane" layoutX="13.0" layoutY="138.0" prefHeight="202.0" prefWidth="703.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="closeBtn" layoutX="1037.0" layoutY="-5.0" onAction="#closeAction" prefHeight="31.0" prefWidth="36.0" text="." textFill="#fffdfd">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../gui/tools/close_blue.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

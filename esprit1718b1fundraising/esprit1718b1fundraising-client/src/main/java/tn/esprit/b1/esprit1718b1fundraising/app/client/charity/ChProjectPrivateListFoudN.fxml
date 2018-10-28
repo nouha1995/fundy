@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.b1.esprit1718b1fundraising.app.client.charity.ChPPrivateListFoundNController">
+   <children>
+      <Pane fx:id="popUpHolder" prefHeight="118.0" prefWidth="181.0" styleClass="login-card">
+         <children>
+            <JFXButton fx:id="btnLogoff" layoutX="7.0" layoutY="7.0" prefHeight="50.0" prefWidth="166.0" style="-fx-alignment: LEFT;" text="Log off">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="KEYBOARD_RETURN" size="16.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" layoutX="7.0" layoutY="64.0" prefHeight="50.0" prefWidth="166.0" style="-fx-alignment: LEFT;" text="Close">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="CLOSE" size="16.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView disable="true" fitHeight="1000.0" fitWidth="1099.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gui/tools/bg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="1110.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" layoutX="96.0" layoutY="73.0" prefHeight="80.0" prefWidth="256.0" spacing="5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Training and Placement system">
+                     <font>
+                        <Font name="Roboto Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Handle these tiring processes like a pro">
+                     <font>
+                        <Font name="Roboto Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Experience automation like never before">
+                     <font>
+                        <Font name="Roboto Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <JFXButton fx:id="btnAccount" buttonType="RAISED" layoutX="861.0" layoutY="25.0" onAction="#getBack" styleClass="btn-account" text="getBack" />
+            <Text fill="WHITE" layoutX="58.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fundraising&amp;Charity " wrappingWidth="332.13671875">
+               <font>
+                  <Font name="Roboto Bold" size="36.0" />
+               </font>
+            </Text>
+            <StackPane fx:id="stackPane" layoutX="1.0" layoutY="260.0" prefHeight="391.0" prefWidth="1099.0" />
+            <JFXButton fx:id="eyeBtn" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="782.0" layoutY="23.0" onAction="#reload" prefHeight="39.0" prefWidth="52.0" styleClass="floating-button" stylesheets="@../gui/style.css" textAlignment="CENTER">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EYE" size="22.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
